@@ -1,0 +1,25 @@
+.carta-apresentacao{
+    padding: 2% 5%;
+    width: 50%;
+}
+
+.titulo-doc{
+    color: #eb3486;
+    text-align: center;
+    text-shadow:1px 1px 0 rgb(238, 142, 162);
+}
+
+.folha{
+    padding: 3%;
+
+    background-color: whitesmoke;
+    color: #ad004e;
+
+    text-align: justify;
+    
+    border-radius: 5px;
+
+    -webkit-box-shadow: 10px 10px 6px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 6px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 6px 0px rgba(0,0,0,0.75);
+}
