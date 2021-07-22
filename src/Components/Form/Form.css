@@ -1,6 +1,39 @@
-.form{
-    padding: 0 5%;
-    width: 50%;
+.clear{
+    clear: both;
+}
 
-    color: white;
+.formulario{
+    padding: 2% 5%;
+    width: 50%;
+    background-color: red;
+}
+
+.form-content{
+    width: 100%;
+    
+}
+.form-wrapper{
+    padding: 0 10px;
+    float: left;
+    background-color: green;
+}
+
+.w50{
+    width: 50%;
+}
+
+.w100{
+    width: 100%;
+}
+
+.form-wrapper input{
+    width: 100%;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.form-wrapper textarea{
+    width: 100%;
+    resize: none;
+    height: 60px;
 }
