@@ -5,6 +5,9 @@ const Form = () => {
         <section className="formulario">
             <div className="form-content">
                 <form>
+                    <div className="form-wrapper w100 title">
+                        <h3>Preencha suas informações abaixo:</h3>
+                    </div>
                     <div className="form-wrapper w50">
                         <span>Seu nome nompleto:</span>
                         <input type="text" />

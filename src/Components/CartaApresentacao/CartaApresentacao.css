@@ -4,9 +4,9 @@
 }
 
 .titulo-doc{
-    color: #eb3486;
+    color: rgb(247, 138, 192);
     text-align: center;
-    text-shadow:1px 1px 0 rgb(238, 142, 162);
+    margin-bottom: 10px;
 }
 
 .folha{
@@ -22,4 +22,8 @@
     -webkit-box-shadow: 10px 10px 6px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 6px 0px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 6px 0px rgba(0,0,0,0.75);
+}
+
+.folha p{
+    margin-bottom: 10px;
 }
