@@ -1,6 +1,24 @@
+import React from 'react';
 import './CartaApresentacao.css'
 
-const CartaApresentacao = () => {
+const CartaApresentacao = (props) => {
+
+
+    /*const nome = props.nomeUsuario;
+
+    const clickHandler = () =>{
+        setNomeUsuario(props.nomeUsuario);
+        console.log(nomeUsuario);
+        console.log(nome);
+    }*/
+
+    /*const nome = props.nomeUsuario;
+
+    const clickHandler = () =>{
+        console.log(nome);
+    }*/
+   
+   
     return (
         <section className="carta-apresentacao">
             <h2 className="titulo-doc">Carta de Apresentação</h2>
@@ -13,7 +31,7 @@ const CartaApresentacao = () => {
                     visando o desenvolvimento de um trabalho objetivo e gerador de resultados,
                     de forma a possibilitar o crescimento qualitativo e quantitativo para os envolvidos.</p>
                 <p>Agradeço a atenção e coloco-me ao inteiro dispor para contato pessoal.</p>
-                <p>( SEU NOME COMPLETO )</p>
+                <p>{props.teste}</p>
                 <p>( SEU TELEFONE PARA CONTATO )</p>
             </div>
 
