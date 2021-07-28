@@ -4,14 +4,21 @@ import CartaApresentacao from './Components/CartaApresentacao/CartaApresentacao'
 import Form from './Components/Form/Form';
 
 const App = () => {
-  const [ nomeUsuario , setInformacoes] = useState('');
+  const [dadosUsuario, setDadosUsuario] = useState(
+    {
+      nome: '( SEU NOME COMPLETO )',
+      telefone: '( SEU TELEFONE )',
+    }
+  );
 
-  //const addDadosNoDocumento = data => setTeste(data);
+  const adicionarDadosHandler = (nomeUsuario, telefoneUsuario) => {
+    setDadosUsuario({ nome: nomeUsuario, telefone: telefoneUsuario });
+  }
 
   return (
     <div className="App">
-      <Form onEnviarDadosDocumento={data => setInformacoes(data)} />
-      <CartaApresentacao teste={nomeUsuario} />
+      <Form onEnviarDadosDocumento={adicionarDadosHandler} />
+      <CartaApresentacao dados={dadosUsuario} />
     </div>
   );
 }

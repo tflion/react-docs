@@ -3,23 +3,28 @@ import { useState } from "react";
 import "./Form.css"
 
 const Form = (props) => {
-    const [nomeUsuarioInserido, setNomeUsuarioInserido] = useState('');
+    const [nomeUsuario, setNomeUsuario] = useState('');
+    const [telefoneUsuario, setTelefoneUsuario] = useState('');
 
     const trocarNomeUsuarioHandler = (event) => {
-        setNomeUsuarioInserido(event.target.value);
+        setNomeUsuario(event.target.value);
     };
+
+    const trocarTelefoneUsuarioHandler = (event) => {
+        setTelefoneUsuario(event.target.value);
+    };
+
+    
+
 
     const enviarHandler = (event) => {
         event.preventDefault();
 
-        /*const dadosDocumento = {
-            nomeUsuario: nomeUsuarioInserido
-        }*/
 
-        const dadosDocumento = nomeUsuarioInserido;
 
-        props.onEnviarDadosDocumento(dadosDocumento);
-        setNomeUsuarioInserido('');
+        props.onEnviarDadosDocumento(nomeUsuario, telefoneUsuario);
+        setTelefoneUsuario('');
+        setNomeUsuario('');
     }
 
     return (
@@ -32,12 +37,14 @@ const Form = (props) => {
                     <div className="form-wrapper w50">
                         <span>Seu nome nompleto:</span>
                         <input type="text"
-                            value={nomeUsuarioInserido}
+                            value={nomeUsuario}
                             onChange={trocarNomeUsuarioHandler} />
                     </div>
                     <div className="form-wrapper w50">
                         <span>Seu telefone:</span>
-                        <input type="text" />
+                        <input type="text"
+                        value={telefoneUsuario}
+                        onChange={trocarTelefoneUsuarioHandler} />
                     </div>
                     <div className="form-wrapper w100">
                         <span>Quem indicou:</span>
