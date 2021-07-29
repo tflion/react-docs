@@ -1,0 +1,70 @@
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background: rgba(0,0,0,0.7);
+}
+
+.modal{
+    position: fixed;
+    height: 50vh;
+    left: 10%;
+    width: 80%;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.header{
+    background: rgb(233, 87, 160);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding: 0.5rem;
+}
+
+.header h2{
+    color: rgb(255, 189, 222);
+    margin: 0;
+    text-align: center;
+}
+
+.conteudo{
+    padding: 1rem;
+    background: white;
+}
+
+.footer{
+    background: white;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem 1rem;
+}
+
+.footer button{
+    width: 5rem;
+    height: 2rem;
+    background-color: rgba(245, 73, 159, 0.4);
+    border: none;
+    outline-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.footer button:hover{
+    background-color: rgb(233, 87, 160);
+    color: rgb(241, 128, 166);
+}
+
+@media (min-width: 768px) {
+    .modal {
+      left: calc(50% - 20rem);
+      width: 40rem;
+    }
+  }
