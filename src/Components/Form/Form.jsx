@@ -37,11 +37,14 @@ const Form = (props) => {
     const enviarHandler = (event) => {
         event.preventDefault();
 
-
-
-        props.onEnviarDadosDocumento(nomeUsuario, telefoneUsuario);
+        props.onEnviarDadosDocumento(nomeUsuario, telefoneUsuario, quemIndicou, tempo, areaAtuacao, empresa, atividadesRealizadas);
         setTelefoneUsuario('');
         setNomeUsuario('');
+        setQuemIndicou('');
+        setTempo('');
+        setEmpresa('');
+        setAtividadesRealizadas('');
+        setAreaAtuacao('');
     }
 
     return (
